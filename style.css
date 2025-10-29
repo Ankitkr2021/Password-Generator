@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(60, 142, 255);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+}
+
+#testing {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+    outline: none;
+}
+
+#testing::placeholder{
+    color: #000;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+input[type = "number"]{
+    width: 55px;
+    height: 25px;
+    /* padding: 5px; */
+    overflow: hidden;
+    box-sizing: border-box;
+    outline: none;
+    /* margin-left: 105px; */
+}
+
+input[type = "checkbox"]{
+    width: 25px;
+    height: 15px;
+    /* padding:   5px; */
+    overflow: hidden;
+    box-sizing: border-box;
+    /* margin-left: 115px; */
+    /* margin-top: 15px; */
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    flex-direction: row;
+    /* background-color: greenyellow; */
+    height: 20px;
+}
+
+button{
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.546);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:active{
+    transform: scaleX(0.95);
+    background: linear-gradient(to top left, rgb(60, 142, 255), rgb(7, 90, 206));
+}

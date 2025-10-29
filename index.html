@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <input type="text" placeholder="Testing" id="testing" >
+        <div>
+        <span>Password Length</span>
+        <input type="number" max="30" min="10" value="5" style="padding: 5px;" id="total">
+        </div>
+        <div>
+        <span>Contains Uppercase</span>
+        <input type="checkbox" id="upper-case" checked>
+        </div>
+        <div>
+        <span>Contains Lowercase</span>
+        <input type="checkbox" id="lower-case">
+        </div>
+        <div>
+        <span>Contains Numbers</span>
+        <input type="checkbox" id="number-case">
+        </div>
+        <div>
+        <span>Contains Symbols</span>
+        <input type="checkbox" id="symbol-case">
+        </div>
+        <button id="btn">Generate</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
